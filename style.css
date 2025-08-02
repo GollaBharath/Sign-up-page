@@ -1,10 +1,25 @@
-:root {
+* {
+  margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
 }
 
-.side-img img {
-  height: 100%;
-  width: 30vw;
+body {
+  display: flex;
+}
+
+.side-img {
+  background-image: url(./ia-huh-unsplash.jpg);
+  background-size: 100vh auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 35%;
+}
+
+.side-img .credit {
+  position: absolute;
+  bottom: 0;
+  align-self: center;
 }
