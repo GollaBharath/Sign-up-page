@@ -1,0 +1,10 @@
+:root {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.side-img img {
+  height: 100%;
+  width: 30vw;
+}
