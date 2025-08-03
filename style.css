@@ -1,25 +1,79 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  display: flex;
+	display: flex;
+	background-color: #f9fafb;
 }
 
 .side-img {
-  background-image: url(./ia-huh-unsplash.jpg);
-  background-size: 100vh auto;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-  flex-shrink: 0;
-  width: 35%;
+	background-image: url(./ia-huh-unsplash.jpg);
+	background-size: 100vh auto;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
+	flex-shrink: 0;
+	width: 35%;
 }
 
 .side-img .credit {
-  position: absolute;
-  bottom: 0;
-  align-self: center;
+	position: absolute;
+	top: 1%;
+	left: 10%;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	align-self: center;
+}
+
+.side-img .credit a {
+	color: black;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.main h3 {
+	font-size: 23px;
+	max-width: 80%;
+}
+
+.newtxt {
+	margin-bottom: 5%;
+}
+
+.form {
+	background-color: #fffffe;
+}
+
+fieldset {
+	border: hidden;
+	height: 20vh;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+form fieldset legend {
+	float: left;
+	font-size: larger;
+	font-weight: bold;
+	width: 100%;
+}
+
+.inps {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.inps > * {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
