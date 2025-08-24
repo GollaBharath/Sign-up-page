@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Norse";
+	src: url(./assets/Norse-Bold.otf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,7 +15,8 @@ body {
 }
 
 .side-img {
-	background-image: url(./ia-huh-unsplash.jpg);
+	background-image: url(./assets/halie-west-unsplash.jpg);
+	position: relative;
 	background-size: 100vh auto;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -19,17 +25,35 @@ body {
 	width: 35%;
 }
 
+.titleBar {
+	position: absolute;
+	top: 30%;
+	justify-content: center;
+	width: 100%;
+	height: 15vh;
+	background-color: rgba(0, 0, 0, 0.604);
+	display: flex;
+	align-items: center;
+}
+
+.titleBar > * {
+	color: white;
+	max-height: 10vh;
+	font-size: 8vh;
+	font-family: "Norse";
+}
+
 .side-img .credit {
 	position: absolute;
-	top: 1%;
+	bottom: 1%;
 	left: 10%;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	text-align: center;
 	align-self: center;
 }
 
 .side-img .credit a {
-	color: black;
+	color: rgb(255, 255, 255);
 }
 
 .main {
@@ -46,6 +70,10 @@ body {
 
 .newtxt {
 	margin-bottom: 5%;
+}
+
+.padding {
+	padding: 0vh 5vw;
 }
 
 .form {
@@ -69,11 +97,22 @@ form fieldset legend {
 
 .inps {
 	display: flex;
-	justify-content: space-evenly;
 }
 
 .inps > * {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	padding: 1vh 3vw;
+}
+
+.submitbtn {
+	height: 5vh;
+	width: 10vw;
+	border-radius: 10px;
+	margin: 3vh 2vw;
+	background-color: #596d48;
+	color: white;
+	font-size: larger;
+	text-emphasis: bold;
 }
