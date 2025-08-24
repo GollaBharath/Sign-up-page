@@ -3,6 +3,29 @@
 	src: url(./assets/Norse-Bold.otf);
 }
 
+@font-face {
+	font-family: "CoolFont1";
+	src: url(./assets/WDXL_Lubrifont_TC/WDXLLubrifontTC-Regular.ttf)
+		format(truetype);
+}
+
+@font-face {
+	font-family: "CoolFontMain";
+	src: url(./assets/Macondo-Regular/Macondo-Regular.ttf) format(truetype);
+}
+
+@font-face {
+	font-family: "CoolFontHead";
+	src: url(./assets/josefinSans/JosefinSans-VariableFont_wght.ttf)
+		format(truetype);
+}
+
+@font-face {
+	font-family: "CoolFont2";
+	src: url(./assets/WDXL_Lubrifont_JP_N/WDXLLubrifontJPN-Regular.ttf)
+		format(truetype);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -66,12 +89,14 @@ body {
 .main h3 {
 	font-size: 23px;
 	max-width: 80%;
+	font-weight: normal;
+	font-family: "CoolFont1", "CoolFont2";
 }
 
 .main p {
+	font-family: "CoolFont1", "CoolFont2";
 	font-size: 18px;
 	padding: 0vh 5vw;
-	font-weight: bold;
 }
 
 .main p > a {
@@ -105,6 +130,7 @@ form fieldset legend {
 	float: left;
 	font-size: larger;
 	font-weight: bold;
+	font-family: "CoolFontHead";
 	width: 100%;
 }
 
@@ -121,6 +147,7 @@ form fieldset legend {
 
 .inps > * > label {
 	padding-top: 2vh;
+	font-family: "CoolFontMain";
 }
 
 .inps > * > input {
@@ -149,4 +176,5 @@ form fieldset legend {
 	color: white;
 	font-size: larger;
 	text-emphasis: bold;
+	font-family: "CoolFont2";
 }
